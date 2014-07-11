@@ -35,11 +35,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDV-yh-xe4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="backImage" destination="sDV-yh-xe4" id="ufK-48-YYB"/>
                         <outlet property="label1" destination="oZc-D3-TVt" id="NZB-Ql-qqN"/>
                         <outlet property="label2" destination="0fA-u0-m7B" id="Wab-iJ-dqK"/>
                         <outlet property="label3" destination="3N4-E1-lrS" id="y1g-UH-f4W"/>

@@ -26,21 +26,16 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
+   
     if(![YDDataFetcher shared].config){
         [self openSplash];
     }
-    else{
-        
-        
-    }
-    
+   
     
 }
 
 -(void)openSplash{
-    
-    [[MYRoutes shared] pushViewController:@"SplashView" withStoryboard:@"Main" animated:NO];
+    [[MYRoutes shared] presentViewController:@"SplashView" withStoryboard:@"Main" animated:NO completion:nil];
     
 }
 

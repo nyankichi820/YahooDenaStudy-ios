@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet UILabel *label3;
 @property (weak, nonatomic) IBOutlet UILabel *label2;
+@property (weak, nonatomic) IBOutlet UIImageView *backImage;
 
 @end
 
@@ -68,16 +69,23 @@
         }];
        
     }).then(^(BOOL finished){
+        UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
+        [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+        
+        self.backImage.image = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        self.view.backgroundColor = [UIColor clearColor];
+        
         return [UIView promiseAnimationWithDuration:0.6
                                          animations:^{
-                                             weakSelf.view.y = -600;
+                                             self.backImage.transform = CGAffineTransformMakeScale(100,100);
                                              
                                          }];
         
     }).then(^(BOOL finished){
         [[YDDataFetcher shared] getConfig:^(id result, NSError *error) {
-            UIViewController *viewController = [[MYRoutes shared] createViewController:@"HomeView" withStoryboard:@"Main"];
-              weakSelf.navigationController.viewControllers = @[viewController];
+            [weakSelf dismissViewControllerAnimated:NO completion:nil];
         }];
     });
     
