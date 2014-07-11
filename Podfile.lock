@@ -1,0 +1,131 @@
+PODS:
+  - AFNetworking (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.3.1)
+  - AFNetworking/Security (2.3.1)
+  - AFNetworking/Serialization (2.3.1)
+  - AFNetworking/UIKit (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.3):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.3):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.3)
+  - BlocksKit/DynamicDelegate (2.2.3)
+  - BlocksKit/MessageUI (2.2.3):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.3):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Bolts (1.1.0)
+  - Canvas (0.1.1)
+  - Chains (0.1.0)
+  - ChuzzleKit (1.0.3)
+  - CocoaLumberjack (1.9.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.9.1)
+  - CocoaLumberjack/Extensions (1.9.1):
+    - CocoaLumberjack/Core
+  - Facebook-iOS-SDK (3.15.1):
+    - Bolts
+  - FrameAccessor (1.3.2)
+  - GPUImage (0.1.4)
+  - MTAnimation (1.2.0)
+  - MYRoutes (0.1.0)
+  - ObjectAL-for-iPhone (2.4)
+  - OMGHTTPURLRQ (1.1.3):
+    - ChuzzleKit
+  - Parse (1.2.19):
+    - Facebook-iOS-SDK (~> 3.11)
+  - PromiseKit (0.9.11.1):
+    - PromiseKit/defaults
+  - PromiseKit/base (0.9.11.1)
+  - PromiseKit/defaults (0.9.11.1):
+    - PromiseKit/Foundation
+    - PromiseKit/UIAnimation
+    - PromiseKit/UIKit
+  - PromiseKit/Foundation (0.9.11.1):
+    - ChuzzleKit
+    - OMGHTTPURLRQ
+    - PromiseKit/base
+  - PromiseKit/private (0.9.11.1)
+  - PromiseKit/UIAnimation (0.9.11.1):
+    - PromiseKit/base
+    - PromiseKit/private
+  - PromiseKit/UIKit (0.9.11.1):
+    - PromiseKit/base
+    - PromiseKit/private
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
+  - socket.IO (0.5.2):
+    - SocketRocket (~> 0.2)
+  - SocketRocket (0.3.1-beta2)
+  - STTwitter (0.1.4)
+  - UIColor-HexString (1.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - BlocksKit
+  - Canvas
+  - Chains
+  - CocoaLumberjack
+  - Facebook-iOS-SDK
+  - FrameAccessor
+  - GPUImage (~> 0.1.4)
+  - MTAnimation
+  - MYRoutes (~> 0.1.0)
+  - ObjectAL-for-iPhone
+  - Parse (~> 1.2.19)
+  - PromiseKit (from `https://github.com/nyankichi820/PromiseKit.git`)
+  - SDWebImage
+  - socket.IO
+  - STTwitter
+  - UIColor-HexString (~> 1.1.0)
+
+EXTERNAL SOURCES:
+  PromiseKit:
+    :git: https://github.com/nyankichi820/PromiseKit.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
+  BlocksKit: 07c8a80f04275efac6a5f8b973782489c083a182
+  Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
+  Canvas: 45356a2e61087a776bfde5090676d290cf67f7f2
+  Chains: c4ed906fa9dcbc38ac6259075886d263e14aecbc
+  ChuzzleKit: 2d6a1f9ba844ebca126642990106b8c24de117f7
+  CocoaLumberjack: 94accd5749f5c5d15134c8d50f34a973aed8ef69
+  Facebook-iOS-SDK: 56214af8e0ef16e751eb2804250326b709e571b8
+  FrameAccessor: 8bf7a2c66f86005ff9bcd1c9cbd0a3eb4970910b
+  GPUImage: ac2bde5f4dbea02a81ced6313964cec1f2043ca9
+  MTAnimation: 4b75612c0a81f38d421905ade5362435253ce8d4
+  MYRoutes: 5003f5c870e802e5290a13c24413e3df1559d00c
+  ObjectAL-for-iPhone: 305e0d4548ed5897eab08a6e1cc1f6589213cc28
+  OMGHTTPURLRQ: ca3a7daf1e86d6b1be34ff8f14606cd503891098
+  Parse: ffebaecaddd32cb52671010f81567c298ff93d04
+  PromiseKit: 61e7e1b2dface3bb7c09aaad1e33453c71a612c6
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
+  socket.IO: db3e71805c862038ab73209dda2b0ad6babc54b2
+  SocketRocket: 79a68ae186063c65e1fe6f638b1ae2927aa5f304
+  STTwitter: 809f63f856341fdd103fbc6d9e4818d48a91be0c
+  UIColor-HexString: a9eabf02c1a2f9036ed6ac9cb2a3ea086f3b39e4
+
+COCOAPODS: 0.33.1

@@ -1,0 +1,83 @@
+{
+    "event": {
+        "title": "Yahoo! JAPAN　DeNA iOSエンジニア・UI/UXデザイナー勉強会",
+        "time_string": "7月16日 水曜日　19:00〜21:00",
+        "place": "Yahoo! JAPAN BASE6"
+    },
+    "session": {
+        "yahoo": [
+                  {
+                  "id": 1,
+                  "name": "田中 淳子",
+                  "work": "デザイナー",
+                  "session_description": "タブレット版「Yahoo!ニュースアプリ」のこだわり",
+                  "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                  },
+                  {
+                  "id": 2,
+                  "name": "田中 淳子デザイナー",
+                  "work": "デザイナー",
+                  "session_description": "タブレット版「Yahoo!ニュースアプリ」のこだわり",
+                  "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                  },
+                  {
+                  "id": 3,
+                  "name": "瀧 知惠美",
+                  "work": "デザイナー",
+                  "session_description": "スマホサービスに最適なUXを考えるアプローチ方法",
+                  "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                  },
+                  {
+                  "id": 4,
+                  "name": "小林 大介",
+                  "work": "iOSエンジニア",
+                  "session_description": "スマデバリッチ広告をプロトタイプで作り上げる",
+                  "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                  },
+                  {
+                  "id": 5,
+                  "name": "天野 裕介",
+                  "work": "iOSエンジニア",
+                  "session_description": "デザイナーとエンジニアのコミュニケーション",
+                  "profile_image_url_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                  }
+                  ],
+        "dena": [
+                 {
+                 "id": 6,
+                 "name": "坪田 朋",
+                 "work": "UI/UXデザイナー",
+                 "session_description": "マンガボックスのアプリができるまで",
+                 "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                 },
+                 {
+                 "id": 7,
+                 "name": "吉田 正史",
+                 "work": "iOSエンジニア",
+                 "session_description": "現場でのデザイナーとエンジニアの連携の実際",
+                 "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                 },
+                 {
+                 "id": 8,
+                 "name": "高橋 伸弥",
+                 "work": "UI/UXデザイナー",
+                 "session_description": "インタラクティブデザイナーがサービスデザイナーになって感じる阿鼻叫喚",
+                 "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                 },
+                 {
+                 "id": 9,
+                 "name": "黒沼 慎太郎",
+                 "work": "iOSエンジニア",
+                 "session_session_description": "チラシの裏のエンジニアリング〜おっさんだらけの主婦向けアプリ開発の舞台裏",
+                 "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                 },
+                 {
+                 "id": 10,
+                 "name": "増田 直生",
+                 "work": "UX/UIデザイナー",
+                 "session_description": "Sketch3を使った、デザインからプロトタイピング",
+                 "profile_image_url": "http://dena.com/campaign/2014/yahoo_dena/img/profile/profile01_2.png"
+                 }
+                 ]
+    }
+}

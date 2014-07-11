@@ -13,15 +13,27 @@
 		13615EC5196F93C100654D66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13615EC3196F93C100654D66 /* InfoPlist.strings */; };
 		13615EC7196F93C100654D66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615EC6196F93C100654D66 /* main.m */; };
 		13615ECB196F93C100654D66 /* YDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615ECA196F93C100654D66 /* YDAppDelegate.m */; };
-		13615ECE196F93C100654D66 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13615ECC196F93C100654D66 /* Main_iPhone.storyboard */; };
-		13615ED1196F93C100654D66 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13615ECF196F93C100654D66 /* Main_iPad.storyboard */; };
-		13615ED4196F93C100654D66 /* YDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615ED3196F93C100654D66 /* YDViewController.m */; };
+		13615ECE196F93C100654D66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13615ECC196F93C100654D66 /* Main.storyboard */; };
 		13615ED6196F93C100654D66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13615ED5196F93C100654D66 /* Images.xcassets */; };
 		13615EDD196F93C100654D66 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13615EDC196F93C100654D66 /* XCTest.framework */; };
 		13615EDE196F93C100654D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13615EBA196F93C000654D66 /* Foundation.framework */; };
 		13615EDF196F93C100654D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13615EBE196F93C100654D66 /* UIKit.framework */; };
 		13615EE7196F93C100654D66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13615EE5196F93C100654D66 /* InfoPlist.strings */; };
 		13615EE9196F93C100654D66 /* YahooDenaStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615EE8196F93C100654D66 /* YahooDenaStudyTests.m */; };
+		13615EF4196F974300654D66 /* YDSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615EF3196F974300654D66 /* YDSplashViewController.m */; };
+		13615EF7196F97C400654D66 /* YDSessionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615EF6196F97C400654D66 /* YDSessionListViewController.m */; };
+		13615EFA196FADCB00654D66 /* YDDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615EF9196FADCB00654D66 /* YDDataFetcher.m */; };
+		13615F03196FAE1000654D66 /* YDSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F02196FAE1000654D66 /* YDSessionViewController.m */; };
+		13615F06196FAE2000654D66 /* YDAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F05196FAE2000654D66 /* YDAccessViewController.m */; };
+		13615F0C196FB0A300654D66 /* YDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F0B196FB0A300654D66 /* YDNavigationViewController.m */; };
+		13615F0F196FB0E300654D66 /* YDEventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F0E196FB0E300654D66 /* YDEventInfoViewController.m */; };
+		13615F12196FB18C00654D66 /* YDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F11196FB18C00654D66 /* YDHomeViewController.m */; };
+		13615F14196FB4B200654D66 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 13615F13196FB4B200654D66 /* data.json */; };
+		13615F18196FBBBB00654D66 /* YDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F17196FBBBB00654D66 /* YDObject.m */; };
+		13615F1B196FBBEB00654D66 /* YDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F1A196FBBEB00654D66 /* YDSession.m */; };
+		13615F1E196FBCFC00654D66 /* YDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F1D196FBCFC00654D66 /* YDEvent.m */; };
+		13615F24196FF43600654D66 /* home_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13615F23196FF43600654D66 /* home_background.jpg */; };
+		55C719F7433848F2A1DA3045 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC347294CC8E4C9F87221F7B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +57,39 @@
 		13615EC8196F93C100654D66 /* YahooDenaStudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YahooDenaStudy-Prefix.pch"; sourceTree = "<group>"; };
 		13615EC9196F93C100654D66 /* YDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDAppDelegate.h; sourceTree = "<group>"; };
 		13615ECA196F93C100654D66 /* YDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDAppDelegate.m; sourceTree = "<group>"; };
-		13615ECD196F93C100654D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		13615ED0196F93C100654D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		13615ED2196F93C100654D66 /* YDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDViewController.h; sourceTree = "<group>"; };
-		13615ED3196F93C100654D66 /* YDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDViewController.m; sourceTree = "<group>"; };
+		13615ECD196F93C100654D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13615ED5196F93C100654D66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13615EDB196F93C100654D66 /* YahooDenaStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooDenaStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13615EDC196F93C100654D66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		13615EE4196F93C100654D66 /* YahooDenaStudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YahooDenaStudyTests-Info.plist"; sourceTree = "<group>"; };
 		13615EE6196F93C100654D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13615EE8196F93C100654D66 /* YahooDenaStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahooDenaStudyTests.m; sourceTree = "<group>"; };
+		13615EF2196F974300654D66 /* YDSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSplashViewController.h; sourceTree = "<group>"; };
+		13615EF3196F974300654D66 /* YDSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSplashViewController.m; sourceTree = "<group>"; };
+		13615EF5196F97C400654D66 /* YDSessionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSessionListViewController.h; sourceTree = "<group>"; };
+		13615EF6196F97C400654D66 /* YDSessionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSessionListViewController.m; sourceTree = "<group>"; };
+		13615EF8196FADCB00654D66 /* YDDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDDataFetcher.h; sourceTree = "<group>"; };
+		13615EF9196FADCB00654D66 /* YDDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDDataFetcher.m; sourceTree = "<group>"; };
+		13615F01196FAE1000654D66 /* YDSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSessionViewController.h; sourceTree = "<group>"; };
+		13615F02196FAE1000654D66 /* YDSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSessionViewController.m; sourceTree = "<group>"; };
+		13615F04196FAE2000654D66 /* YDAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YDAccessViewController.h; path = ../YDAccessViewController.h; sourceTree = "<group>"; };
+		13615F05196FAE2000654D66 /* YDAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YDAccessViewController.m; path = ../YDAccessViewController.m; sourceTree = "<group>"; };
+		13615F0A196FB0A300654D66 /* YDNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNavigationViewController.h; sourceTree = "<group>"; };
+		13615F0B196FB0A300654D66 /* YDNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNavigationViewController.m; sourceTree = "<group>"; };
+		13615F0D196FB0E300654D66 /* YDEventInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDEventInfoViewController.h; sourceTree = "<group>"; };
+		13615F0E196FB0E300654D66 /* YDEventInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDEventInfoViewController.m; sourceTree = "<group>"; };
+		13615F10196FB18C00654D66 /* YDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDHomeViewController.h; sourceTree = "<group>"; };
+		13615F11196FB18C00654D66 /* YDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDHomeViewController.m; sourceTree = "<group>"; };
+		13615F13196FB4B200654D66 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../data.json; sourceTree = "<group>"; };
+		13615F16196FBBBB00654D66 /* YDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDObject.h; sourceTree = "<group>"; };
+		13615F17196FBBBB00654D66 /* YDObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDObject.m; sourceTree = "<group>"; };
+		13615F19196FBBEB00654D66 /* YDSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSession.h; sourceTree = "<group>"; };
+		13615F1A196FBBEB00654D66 /* YDSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSession.m; sourceTree = "<group>"; };
+		13615F1C196FBCFC00654D66 /* YDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDEvent.h; sourceTree = "<group>"; };
+		13615F1D196FBCFC00654D66 /* YDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDEvent.m; sourceTree = "<group>"; };
+		13615F23196FF43600654D66 /* home_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home_background.jpg; sourceTree = "<group>"; };
+		EC347294CC8E4C9F87221F7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B309F631744F2B8A19D28E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +100,7 @@
 				13615EBD196F93C100654D66 /* CoreGraphics.framework in Frameworks */,
 				13615EBF196F93C100654D66 /* UIKit.framework in Frameworks */,
 				13615EBB196F93C000654D66 /* Foundation.framework in Frameworks */,
+				55C719F7433848F2A1DA3045 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +120,12 @@
 		13615EAE196F93C000654D66 = {
 			isa = PBXGroup;
 			children = (
+				13615F23196FF43600654D66 /* home_background.jpg */,
 				13615EC0196F93C100654D66 /* YahooDenaStudy */,
 				13615EE2196F93C100654D66 /* YahooDenaStudyTests */,
 				13615EB9196F93C000654D66 /* Frameworks */,
 				13615EB8196F93C000654D66 /* Products */,
+				F7B309F631744F2B8A19D28E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +145,7 @@
 				13615EBC196F93C100654D66 /* CoreGraphics.framework */,
 				13615EBE196F93C100654D66 /* UIKit.framework */,
 				13615EDC196F93C100654D66 /* XCTest.framework */,
+				EC347294CC8E4C9F87221F7B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,10 +155,10 @@
 			children = (
 				13615EC9196F93C100654D66 /* YDAppDelegate.h */,
 				13615ECA196F93C100654D66 /* YDAppDelegate.m */,
-				13615ECC196F93C100654D66 /* Main_iPhone.storyboard */,
-				13615ECF196F93C100654D66 /* Main_iPad.storyboard */,
-				13615ED2196F93C100654D66 /* YDViewController.h */,
-				13615ED3196F93C100654D66 /* YDViewController.m */,
+				13615F15196FB9DB00654D66 /* Resources */,
+				13615F09196FAE6300654D66 /* Storyboard */,
+				13615F08196FAE5300654D66 /* Model */,
+				13615F07196FAE4E00654D66 /* Controller */,
 				13615ED5196F93C100654D66 /* Images.xcassets */,
 				13615EC1196F93C100654D66 /* Supporting Files */,
 			);
@@ -155,6 +194,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		13615F07196FAE4E00654D66 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13615EF2196F974300654D66 /* YDSplashViewController.h */,
+				13615EF3196F974300654D66 /* YDSplashViewController.m */,
+				13615F0A196FB0A300654D66 /* YDNavigationViewController.h */,
+				13615F0B196FB0A300654D66 /* YDNavigationViewController.m */,
+				13615F10196FB18C00654D66 /* YDHomeViewController.h */,
+				13615F11196FB18C00654D66 /* YDHomeViewController.m */,
+				13615EF5196F97C400654D66 /* YDSessionListViewController.h */,
+				13615EF6196F97C400654D66 /* YDSessionListViewController.m */,
+				13615F01196FAE1000654D66 /* YDSessionViewController.h */,
+				13615F02196FAE1000654D66 /* YDSessionViewController.m */,
+				13615F04196FAE2000654D66 /* YDAccessViewController.h */,
+				13615F05196FAE2000654D66 /* YDAccessViewController.m */,
+				13615F0D196FB0E300654D66 /* YDEventInfoViewController.h */,
+				13615F0E196FB0E300654D66 /* YDEventInfoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		13615F08196FAE5300654D66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13615EF8196FADCB00654D66 /* YDDataFetcher.h */,
+				13615EF9196FADCB00654D66 /* YDDataFetcher.m */,
+				13615F1F196FDBF100654D66 /* Entity */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		13615F09196FAE6300654D66 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				13615ECC196F93C100654D66 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		13615F15196FB9DB00654D66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13615F13196FB4B200654D66 /* data.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		13615F1F196FDBF100654D66 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				13615F16196FBBBB00654D66 /* YDObject.h */,
+				13615F17196FBBBB00654D66 /* YDObject.m */,
+				13615F19196FBBEB00654D66 /* YDSession.h */,
+				13615F1A196FBBEB00654D66 /* YDSession.m */,
+				13615F1C196FBCFC00654D66 /* YDEvent.h */,
+				13615F1D196FBCFC00654D66 /* YDEvent.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13615EEC196F93C100654D66 /* Build configuration list for PBXNativeTarget "YahooDenaStudy" */;
 			buildPhases = (
+				19895DDA205B4DBE84C28F37 /* Check Pods Manifest.lock */,
 				13615EB3196F93C000654D66 /* Sources */,
 				13615EB4196F93C000654D66 /* Frameworks */,
 				13615EB5196F93C000654D66 /* Resources */,
+				0478B49D0A164FA9AA6A5224 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,10 +333,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13615ED1196F93C100654D66 /* Main_iPad.storyboard in Resources */,
 				13615ED6196F93C100654D66 /* Images.xcassets in Resources */,
-				13615ECE196F93C100654D66 /* Main_iPhone.storyboard in Resources */,
+				13615ECE196F93C100654D66 /* Main.storyboard in Resources */,
 				13615EC5196F93C100654D66 /* InfoPlist.strings in Resources */,
+				13615F24196FF43600654D66 /* home_background.jpg in Resources */,
+				13615F14196FB4B200654D66 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +351,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0478B49D0A164FA9AA6A5224 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19895DDA205B4DBE84C28F37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13615EB3196F93C000654D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13615F12196FB18C00654D66 /* YDHomeViewController.m in Sources */,
+				13615F18196FBBBB00654D66 /* YDObject.m in Sources */,
+				13615F1E196FBCFC00654D66 /* YDEvent.m in Sources */,
+				13615F06196FAE2000654D66 /* YDAccessViewController.m in Sources */,
+				13615EFA196FADCB00654D66 /* YDDataFetcher.m in Sources */,
 				13615EC7196F93C100654D66 /* main.m in Sources */,
-				13615ED4196F93C100654D66 /* YDViewController.m in Sources */,
+				13615EF7196F97C400654D66 /* YDSessionListViewController.m in Sources */,
+				13615F0C196FB0A300654D66 /* YDNavigationViewController.m in Sources */,
+				13615F0F196FB0E300654D66 /* YDEventInfoViewController.m in Sources */,
+				13615EF4196F974300654D66 /* YDSplashViewController.m in Sources */,
 				13615ECB196F93C100654D66 /* YDAppDelegate.m in Sources */,
+				13615F03196FAE1000654D66 /* YDSessionViewController.m in Sources */,
+				13615F1B196FBBEB00654D66 /* YDSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,20 +432,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		13615ECC196F93C100654D66 /* Main_iPhone.storyboard */ = {
+		13615ECC196F93C100654D66 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				13615ECD196F93C100654D66 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		13615ECF196F93C100654D66 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13615ED0196F93C100654D66 /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		13615EE5196F93C100654D66 /* InfoPlist.strings */ = {
@@ -388,6 +525,7 @@
 		};
 		13615EED196F93C100654D66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B309F631744F2B8A19D28E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -395,12 +533,14 @@
 				GCC_PREFIX_HEADER = "YahooDenaStudy/YahooDenaStudy-Prefix.pch";
 				INFOPLIST_FILE = "YahooDenaStudy/YahooDenaStudy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		13615EEE196F93C100654D66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B309F631744F2B8A19D28E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -408,6 +548,7 @@
 				GCC_PREFIX_HEADER = "YahooDenaStudy/YahooDenaStudy-Prefix.pch";
 				INFOPLIST_FILE = "YahooDenaStudy/YahooDenaStudy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +612,7 @@
 				13615EEE196F93C100654D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13615EEF196F93C100654D66 /* Build configuration list for PBXNativeTarget "YahooDenaStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +621,7 @@
 				13615EF1196F93C100654D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

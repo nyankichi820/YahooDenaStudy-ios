@@ -1,5 +1,5 @@
 //
-//  YDViewController.h
+//  YDHomeViewController.h
 //  YahooDenaStudy
 //
 //  Created by Masafumi Yoshida on 2014/07/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YDViewController : UIViewController
+@interface YDHomeViewController : UIViewController
 
 @end
