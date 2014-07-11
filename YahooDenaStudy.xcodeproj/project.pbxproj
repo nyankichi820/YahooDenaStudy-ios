@@ -33,6 +33,7 @@
 		13615F1B196FBBEB00654D66 /* YDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F1A196FBBEB00654D66 /* YDSession.m */; };
 		13615F1E196FBCFC00654D66 /* YDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F1D196FBCFC00654D66 /* YDEvent.m */; };
 		13615F24196FF43600654D66 /* home_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13615F23196FF43600654D66 /* home_background.jpg */; };
+		13615F27196FFD9400654D66 /* YDSessionListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13615F26196FFD9400654D66 /* YDSessionListViewCell.m */; };
 		55C719F7433848F2A1DA3045 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC347294CC8E4C9F87221F7B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,8 @@
 		13615F1C196FBCFC00654D66 /* YDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDEvent.h; sourceTree = "<group>"; };
 		13615F1D196FBCFC00654D66 /* YDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDEvent.m; sourceTree = "<group>"; };
 		13615F23196FF43600654D66 /* home_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home_background.jpg; sourceTree = "<group>"; };
+		13615F25196FFD9400654D66 /* YDSessionListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSessionListViewCell.h; sourceTree = "<group>"; };
+		13615F26196FFD9400654D66 /* YDSessionListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSessionListViewCell.m; sourceTree = "<group>"; };
 		EC347294CC8E4C9F87221F7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B309F631744F2B8A19D28E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +208,8 @@
 				13615F11196FB18C00654D66 /* YDHomeViewController.m */,
 				13615EF5196F97C400654D66 /* YDSessionListViewController.h */,
 				13615EF6196F97C400654D66 /* YDSessionListViewController.m */,
+				13615F25196FFD9400654D66 /* YDSessionListViewCell.h */,
+				13615F26196FFD9400654D66 /* YDSessionListViewCell.m */,
 				13615F01196FAE1000654D66 /* YDSessionViewController.h */,
 				13615F02196FAE1000654D66 /* YDSessionViewController.m */,
 				13615F04196FAE2000654D66 /* YDAccessViewController.h */,
@@ -399,6 +404,7 @@
 				13615F0C196FB0A300654D66 /* YDNavigationViewController.m in Sources */,
 				13615F0F196FB0E300654D66 /* YDEventInfoViewController.m in Sources */,
 				13615EF4196F974300654D66 /* YDSplashViewController.m in Sources */,
+				13615F27196FFD9400654D66 /* YDSessionListViewCell.m in Sources */,
 				13615ECB196F93C100654D66 /* YDAppDelegate.m in Sources */,
 				13615F03196FAE1000654D66 /* YDSessionViewController.m in Sources */,
 				13615F1B196FBBEB00654D66 /* YDSession.m in Sources */,

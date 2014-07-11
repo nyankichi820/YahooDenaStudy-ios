@@ -26,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self.navigationController setNavigationBarHidden:NO];
+    self.config = [[YDDataFetcher shared] getSessionConfig];
     
 }
 
@@ -39,17 +40,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    NSArray *list;
+    if(section == 0){
+        list = [self.config objectForKey:@"yahoo"];
+    }
+    else{
+        list = [self.config objectForKey:@"dena"];
+    }
+    return list.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"hoge" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indexPath.section == 0 ? @"YahooSessionCell" : @"DenaSessionCell"   forIndexPath:indexPath];
     
     
     return cell;

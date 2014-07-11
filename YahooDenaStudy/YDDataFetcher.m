@@ -8,8 +8,7 @@
 //
 
 #import "YDDataFetcher.h"
-#import "YDEvent.h"
-#import "YDSession.h"
+
 #import <AFNetworking/AFNetworking.h>
 
 @interface YDDataFetcher ()
@@ -59,6 +58,20 @@ static YDDataFetcher *instance_ = nil;
     }
     
     
+}
+
+-(YDEvent*)getEventConfig{
+    if(self.config){
+        return [self.config objectForKey:@"event"];
+    }
+    return nil;
+}
+
+-(NSDictionary*)getSessionConfig{
+    if(self.config){
+        return [self.config objectForKey:@"session"];
+    }
+    return nil;
 }
 
 

@@ -26,7 +26,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-   
+    [self.navigationController setNavigationBarHidden:YES];
     if(![YDDataFetcher shared].config){
         [self openSplash];
     }
@@ -45,6 +45,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

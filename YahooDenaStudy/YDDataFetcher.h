@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "YDEvent.h"
+#import "YDSession.h"
 typedef void (^YDDataFetcherCompleteBlocks)(NSDictionary* result,NSError *error);
 
 @interface YDDataFetcher : NSObject
@@ -16,5 +17,8 @@ typedef void (^YDDataFetcherCompleteBlocks)(NSDictionary* result,NSError *error)
 + (YDDataFetcher *) shared;
 -(void)getConfig:(YDDataFetcherCompleteBlocks)completion;
 
+-(YDEvent*)getEventConfig;
+
+-(NSDictionary*)getSessionConfig;
 
 @end
