@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "YDSession.h"
 @interface YDSessionViewController : UIViewController
-
+@property(nonatomic,strong) YDSession *session;
+@property(nonatomic) IBOutlet UIImageView *profileImageView;
+@property(nonatomic) IBOutlet UILabel *nameLabel;
+@property(nonatomic) IBOutlet UILabel *workLabel;
+@property(nonatomic) IBOutlet UILabel *sessionDescriptionLabel;
 @end
+

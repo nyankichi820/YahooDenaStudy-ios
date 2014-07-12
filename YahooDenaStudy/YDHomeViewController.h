@@ -10,4 +10,12 @@
 
 @interface YDHomeViewController : UIViewController
 
+@property(nonatomic) IBOutlet UIImageView *yahooLogoImageView;
+@property(nonatomic) IBOutlet UIImageView *denaLogoImageView;
+@property(nonatomic) IBOutlet UIView *menu1View;
+@property(nonatomic) IBOutlet UIView *menu2View;
+@property(nonatomic) IBOutlet UIView *menu3View;
+
+@property(nonatomic) IBOutlet UILabel *title1Label;
+@property(nonatomic) IBOutlet UILabel *title2Label;
 @end

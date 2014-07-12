@@ -12,4 +12,5 @@
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSString *timeString;
 @property (nonatomic) NSString *place;
+@property (nonatomic) NSString *eventDescription;
 @end

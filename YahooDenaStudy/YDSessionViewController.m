@@ -7,6 +7,7 @@
 //
 
 #import "YDSessionViewController.h"
+#import <UIImageView+WebCache.h>
 
 @interface YDSessionViewController ()
 
@@ -27,6 +28,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.nameLabel.text = self.session.name;
+    self.workLabel.text = self.session.work;
+    self.sessionDescriptionLabel.text = self.session.sessionDescription;
+    __weak typeof(self) weakSelf = self;
+    
+    [self.profileImageView setImageWithURL:[NSURL URLWithString:self.session.profileImageUrl]
+                                 completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                                     
+                                     weakSelf.profileImageView.image = image;
+                                     
+                                     
+                                 }];
+
 }
 
 - (void)didReceiveMemoryWarning

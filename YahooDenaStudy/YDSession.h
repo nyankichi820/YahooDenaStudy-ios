@@ -11,6 +11,8 @@
 @interface YDSession : YDObject
 @property (nonatomic) NSNumber *id;
 @property (nonatomic) NSString *name;
+@property (nonatomic) NSString *work;
+@property (nonatomic) NSString *comment;
 @property (nonatomic) NSString *sessionDescription;
 @property (nonatomic) NSString *profileImageUrl;
 @end

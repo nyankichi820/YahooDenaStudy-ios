@@ -7,10 +7,18 @@
 //
 
 #import "YDAccessViewController.h"
-
+#import <MapKit/MapKit.h>
+#import "YDAccessAnnotation.h"
 @interface YDAccessViewController ()
 
+
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
 @end
+
+CLLocationDegrees LAT = 35.666219;
+CLLocationDegrees LNG = 139.730396;
 
 @implementation YDAccessViewController
 
@@ -26,8 +34,51 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
     [self.navigationController setNavigationBarHidden:NO];
- 
+    [self.mapView setZoomEnabled:YES];
+    self.mapView.showsUserLocation = YES;
+   
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.1,0.1);
+    CLLocationCoordinate2D center = CLLocationCoordinate2DMake(LAT,LNG);
+    [self.mapView setRegion:MKCoordinateRegionMake(center, span) animated:NO];
+    
+    YDAccessAnnotation* st = [[YDAccessAnnotation alloc] init];
+    st.coordinate = CLLocationCoordinate2DMake(LAT,LNG);
+    st.title = @"東京都港区赤坂9-7-1 ミッドタウン・タワー";
+    st.subtitle = @"Yahoo Japan Corporation";
+    
+    // add annotations to map
+    [self.mapView addAnnotation:st];
+    
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    CLLocationDegrees maxLat, maxLng,minLat,minLng;
+    if(LAT > userLocation.location.coordinate.latitude){
+        maxLat = LAT;
+        minLat = userLocation.location.coordinate.latitude;
+    }
+    else{
+        maxLat = userLocation.location.coordinate.latitude;
+        minLat = LAT;
+        
+    }
+    
+    if(LNG > userLocation.location.coordinate.longitude){
+        maxLng = LNG;
+        minLng = userLocation.location.coordinate.longitude;
+    }
+    else{
+        maxLng = userLocation.location.coordinate.longitude;
+        minLng = LNG;
+    }
+    
+    MKCoordinateSpan span = MKCoordinateSpanMake(maxLat - minLat, maxLng - minLng);
+    CLLocationCoordinate2D center = CLLocationCoordinate2DMake((maxLat + minLat) / 2.0, (maxLng + minLng) / 2.0);
+    [self.mapView setRegion:MKCoordinateRegionMake(center, span) animated:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning

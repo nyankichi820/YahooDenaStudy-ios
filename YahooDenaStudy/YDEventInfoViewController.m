@@ -7,9 +7,13 @@
 //
 
 #import "YDEventInfoViewController.h"
+#import "YDDataFetcher.h"
+#import "YDEvent.h"
+#import <PromiseKit/PromiseKit.h>
+#import <FrameAccessor.h>
 
 @interface YDEventInfoViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextView *eventDescriptionTextView;
 @end
 
 @implementation YDEventInfoViewController
@@ -28,7 +32,64 @@
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO];
     
+    YDEvent *event = [[YDDataFetcher shared] getEventConfig];
+    
+    self.titleLabel.text = event.title;
+    self.timeLabel.text = event.timeString;
+    self.placeLabel.text = event.place;
+    
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(
+                                                                     185,0,90,60)];
+    
+    self.eventDescriptionTextView.textContainer.exclusionPaths = @[path];
+    CGFloat lineHeight = 18.0;
+    NSMutableParagraphStyle *paragrahStyle = [[NSMutableParagraphStyle alloc] init];
+    paragrahStyle.minimumLineHeight = lineHeight;
+    paragrahStyle.maximumLineHeight = lineHeight;
+    paragrahStyle.lineBreakMode     = NSLineBreakByWordWrapping;
+    NSDictionary *attributes = @{NSParagraphStyleAttributeName: paragrahStyle};
+    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:event.eventDescription attributes:attributes];
+    
+    self.eventDescriptionTextView.attributedText  =  attrString;
+    
+   
+    
 }
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+     [self startAnimation];
+    
+}
+
+
+-(void)startAnimation{
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_promise_on(dispatch_get_main_queue(),^{
+        return [UIView promiseAnimationWithDuration:0.6
+                                         animations:^{
+                                             weakSelf.imageView2.y = weakSelf.imageView2.y - 5;
+                                             weakSelf.imageView3.y = weakSelf.imageView3.y - 10;
+                                         }];
+    }).then(^(BOOL finished){
+        return [UIView promiseAnimationWithDuration:0.6
+                                         delay:0.4
+                                            options:UIViewAnimationOptionCurveEaseIn
+                                         animations:^{
+                                             weakSelf.imageView2.y = weakSelf.imageView2.y + 5;
+                                             weakSelf.imageView3.y = weakSelf.imageView3.y + 10;
+                                         }];
+    }).finally(^(){
+        [weakSelf startAnimation];
+        
+    });
+    
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

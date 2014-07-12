@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D2C5A649-4022-4CAE-A677-B31C0352B38E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YahooDenaStudy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F0A5C5BA-69B4-497B-AAE8-711A4802C03A</key>
+		<string>https://github.com/nyankichi820/YahooDenaStudy-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YahooDenaStudy.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F0A5C5BA-69B4-497B-AAE8-711A4802C03A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nyankichi820/YahooDenaStudy-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F0A5C5BA-69B4-497B-AAE8-711A4802C03A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0A5C5BA-69B4-497B-AAE8-711A4802C03A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YahooDenaStudy-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

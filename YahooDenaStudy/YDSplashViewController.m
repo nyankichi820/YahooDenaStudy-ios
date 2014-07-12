@@ -14,11 +14,8 @@
 #import <FrameAccessor/FrameAccessor.h>
 
 @interface YDSplashViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *label1;
-@property (weak, nonatomic) IBOutlet UILabel *label3;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
-@property (weak, nonatomic) IBOutlet UIImageView *backImage;
-
+@property (weak, nonatomic) IBOutlet UIView *splashContainer;
+@property ( nonatomic) CALayer *splashLayer;
 @end
 
 @implementation YDSplashViewController
@@ -48,51 +45,71 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 
-    __weak typeof(self) weakSelf = self;
+    [self splash];
     
-    dispatch_promise_on(dispatch_get_main_queue(),^{
-        return [UIView promiseAnimationWithDuration:0.6
-                                         animations:^{
-            weakSelf.label1.x = 500;
-        }];
-    }).then(^(BOOL finished){
-        return [UIView promiseAnimationWithDuration:0.6
-                                         animations:^{
-             weakSelf.label2.y = 600;
-            
-        }];
-    }).then(^(BOOL finished){
-        return [UIView promiseAnimationWithDuration:0.6
-                                         animations:^{
-            weakSelf.label3.y = -100;
-            
-        }];
-       
-    }).then(^(BOOL finished){
-        UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
-        [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-        
-        self.backImage.image = UIGraphicsGetImageFromCurrentImageContext();
-        
-        UIGraphicsEndImageContext();
-        self.view.backgroundColor = [UIColor clearColor];
-        
-        return [UIView promiseAnimationWithDuration:0.6
-                                         animations:^{
-                                             self.backImage.transform = CGAffineTransformMakeScale(100,100);
-                                             
-                                         }];
-        
-    }).then(^(BOOL finished){
+    /*
         [[YDDataFetcher shared] getConfig:^(id result, NSError *error) {
             [weakSelf dismissViewControllerAnimated:NO completion:nil];
         }];
-    });
+         */
+    
     
    
 
 }
 
+
+-(void)splash{
+    self.splashLayer = [CALayer layer];
+    self.splashLayer.frame = CGRectMake(0,0,200,200);
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"contents";
+    animation.duration = 130/30.0;
+    animation.removedOnCompletion = NO;
+    NSMutableArray *timing = [[NSMutableArray alloc] init];
+    
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+    for(int i = 0;i <= 130;i++){
+        NSString *path= [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"splash_%05d",i] ofType:@"png"];
+        UIImage *image= [[UIImage alloc] initWithContentsOfFile:path];
+        [images addObject:(id)image.CGImage];
+        [timing addObject:[NSNumber numberWithFloat:(float)i/130.0]];
+    }
+    
+    animation.keyTimes = timing;
+    animation.values = images;
+    animation.calculationMode = kCAAnimationDiscrete;
+    animation.repeatCount = 1;
+    animation.fillMode = kCAFillModeForwards;
+    animation.delegate = self;
+    
+    [self.splashLayer addAnimation:animation forKey:@"fire"];
+    
+    [self.splashContainer.layer addSublayer:self.splashLayer];
+
+}
+
+- (void)animationDidStop:(CAAnimation *)animation  finished:(BOOL)flag
+{
+    if(animation == [self.splashLayer animationForKey:@"fire"]){
+        __weak typeof(self) weakSelf = self;
+        [UIView animateWithDuration:0.6 animations:^{
+            self.view.alpha = 0;
+        } completion:^(BOOL finished) {
+            [[YDDataFetcher shared] getConfig:^(id result, NSError *error) {
+                [weakSelf dismissViewControllerAnimated:NO completion:nil];
+            }];
+        }];
+       
+        
+    }
+    
+    
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
