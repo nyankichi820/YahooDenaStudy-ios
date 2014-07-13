@@ -45,7 +45,8 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 
-    [self splash];
+    self.splashLayer =  [self createSplashLayer:@"splash_%05d"  frameNumber:130 frameRate:30];
+    [self.splashContainer.layer addSublayer:self.splashLayer];
     
     /*
         [[YDDataFetcher shared] getConfig:^(id result, NSError *error) {
@@ -59,19 +60,19 @@
 }
 
 
--(void)splash{
-    self.splashLayer = [CALayer layer];
-    self.splashLayer.frame = CGRectMake(0,0,200,200);
+-(CALayer*)createSplashLayer:(NSString*)baseformat frameNumber:(NSInteger)frameNumber frameRate:(float)frameRate{
+    CALayer *splashLayer = [CALayer layer];
+    splashLayer.frame = CGRectMake(0,0,200,200);
     
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"contents";
-    animation.duration = 130/30.0;
+    animation.duration = frameNumber/frameRate;
     animation.removedOnCompletion = NO;
     NSMutableArray *timing = [[NSMutableArray alloc] init];
     
     NSMutableArray *images = [[NSMutableArray alloc] init];
-    for(int i = 0;i <= 130;i++){
-        NSString *path= [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"splash_%05d",i] ofType:@"png"];
+    for(int i = 0;i <= frameNumber;i++){
+        NSString *path= [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:baseformat,i] ofType:@"png"];
         UIImage *image= [[UIImage alloc] initWithContentsOfFile:path];
         [images addObject:(id)image.CGImage];
         [timing addObject:[NSNumber numberWithFloat:(float)i/130.0]];
@@ -84,9 +85,9 @@
     animation.fillMode = kCAFillModeForwards;
     animation.delegate = self;
     
-    [self.splashLayer addAnimation:animation forKey:@"fire"];
-    
-    [self.splashContainer.layer addSublayer:self.splashLayer];
+    [splashLayer addAnimation:animation forKey:@"fire"];
+    return splashLayer;
+  
 
 }
 

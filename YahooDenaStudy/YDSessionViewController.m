@@ -30,7 +30,7 @@
     // Do any additional setup after loading the view.
     self.nameLabel.text = self.session.name;
     self.workLabel.text = self.session.work;
-    self.sessionDescriptionLabel.text = self.session.sessionDescription;
+    self.sessionDescriptionTextView.text = self.session.sessionDescription;
     __weak typeof(self) weakSelf = self;
     
     [self.profileImageView setImageWithURL:[NSURL URLWithString:self.session.profileImageUrl]

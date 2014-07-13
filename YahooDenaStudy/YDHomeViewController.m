@@ -26,6 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if(![YDDataFetcher shared].config){
+        self.view.hidden = YES;
+    }
+    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self.navigationController setNavigationBarHidden:YES];
     
@@ -45,6 +50,8 @@
 }
 
 
+
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
@@ -56,7 +63,7 @@
         [self openSplash];
     }
     else if(!self.promise){
-        
+        self.view.hidden = NO;
         __weak typeof(self) weakSelf = self;
        
         self.promise = dispatch_promise_on(dispatch_get_main_queue(),^{
@@ -120,15 +127,26 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    if([segue.identifier isEqualToString:@"GoEventInfo"]){
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.backImageView.frame];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    imageView.image =  self.backImageView.image;
+    CGPoint point = [window convertPoint:self.backImageView.frame.origin fromView:self.view];
+    
+    [window addSubview:imageView];
+    
+    dispatch_promise_on(dispatch_get_main_queue(),^{
+        imageView.frame = CGRectMake(point.x,point.y,imageView.frame.size.width,imageView.frame.size.height);
+        return [UIView promiseAnimationWithDuration:0.4
+                                         animations:^{
+                                             imageView.frame = CGRectMake(0,64,320,180);
+                                         }];
+    }).then(^(BOOL finished){
+        [imageView removeFromSuperview];
         
-    }
-    else if([segue.identifier isEqualToString:@"GoSessionList"]){
-        
-    }
-    else if([segue.identifier isEqualToString:@"GoAccess"]){
-        
-    }
+    });
+
+    
 }
 
 

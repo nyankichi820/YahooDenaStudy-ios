@@ -196,6 +196,7 @@
 		7F798C55197196D50031E4A6 /* splash_00128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F798BD2197196D40031E4A6 /* splash_00128.png */; };
 		7F798C56197196D50031E4A6 /* splash_00129.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F798BD3197196D40031E4A6 /* splash_00129.png */; };
 		7F798C57197196D50031E4A6 /* splash_00130.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F798BD4197196D40031E4A6 /* splash_00130.png */; };
+		7F798C5B1972CFBE0031E4A6 /* YDHomeSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F798C5A1972CFBE0031E4A6 /* YDHomeSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -415,6 +416,8 @@
 		7F798BD2197196D40031E4A6 /* splash_00128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_00128.png; sourceTree = "<group>"; };
 		7F798BD3197196D40031E4A6 /* splash_00129.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_00129.png; sourceTree = "<group>"; };
 		7F798BD4197196D40031E4A6 /* splash_00130.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_00130.png; sourceTree = "<group>"; };
+		7F798C591972CFBE0031E4A6 /* YDHomeSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDHomeSegue.h; sourceTree = "<group>"; };
+		7F798C5A1972CFBE0031E4A6 /* YDHomeSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDHomeSegue.m; sourceTree = "<group>"; };
 		EC347294CC8E4C9F87221F7B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B309F631744F2B8A19D28E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -586,6 +589,8 @@
 			children = (
 				7F093FB71970110E006447DF /* YDSessionSegue.h */,
 				7F093FB81970110E006447DF /* YDSessionSegue.m */,
+				7F798C591972CFBE0031E4A6 /* YDHomeSegue.h */,
+				7F798C5A1972CFBE0031E4A6 /* YDHomeSegue.m */,
 			);
 			name = Segue;
 			sourceTree = "<group>";
@@ -1067,6 +1072,7 @@
 				13615F12196FB18C00654D66 /* YDHomeViewController.m in Sources */,
 				7F093FB91970110E006447DF /* YDSessionSegue.m in Sources */,
 				13615F18196FBBBB00654D66 /* YDObject.m in Sources */,
+				7F798C5B1972CFBE0031E4A6 /* YDHomeSegue.m in Sources */,
 				13615F1E196FBCFC00654D66 /* YDEvent.m in Sources */,
 				13615F06196FAE2000654D66 /* YDAccessViewController.m in Sources */,
 				13615EFA196FADCB00654D66 /* YDDataFetcher.m in Sources */,

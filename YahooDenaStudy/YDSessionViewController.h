@@ -13,6 +13,6 @@
 @property(nonatomic) IBOutlet UIImageView *profileImageView;
 @property(nonatomic) IBOutlet UILabel *nameLabel;
 @property(nonatomic) IBOutlet UILabel *workLabel;
-@property(nonatomic) IBOutlet UILabel *sessionDescriptionLabel;
+@property(nonatomic) IBOutlet UITextView *sessionDescriptionTextView;
 @end
 

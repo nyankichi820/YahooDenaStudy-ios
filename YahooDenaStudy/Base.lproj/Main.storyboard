@@ -65,7 +65,7 @@
                         <viewControllerLayoutGuide type="bottom" id="SBM-1N-mAd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dmK-wX-c2c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="home_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YyT-z4-HwZ">
@@ -76,20 +76,20 @@
                                     <constraint firstAttribute="width" constant="400" id="eTn-DO-02z"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yahoo_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-tN-ovy">
-                                <rect key="frame" x="36" y="411" width="120" height="50"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yahoo_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="kdu-IG-K1O">
+                                <rect key="frame" x="20" y="36" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Qzh-kQ-QFy"/>
-                                    <constraint firstAttribute="height" constant="50" id="Xr5-Ke-IhW"/>
+                                    <constraint firstAttribute="width" constant="120" id="T5R-fc-7JV"/>
+                                    <constraint firstAttribute="height" constant="50" id="XhX-mK-BYm"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dena_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6y2-eE-Eyv">
-                                <rect key="frame" x="171" y="418" width="120" height="40"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dena_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="kAY-be-Xab">
+                                <rect key="frame" x="170" y="41" width="120" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Acv-k4-YUR"/>
-                                    <constraint firstAttribute="height" constant="40" id="wrZ-KU-GB5"/>
+                                    <constraint firstAttribute="width" constant="120" id="dWh-Ib-bGZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="j9S-0u-f4c"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OsX-RI-wXZ">
@@ -186,14 +186,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS Engineer  UI / UX Designer " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-GX-44n">
-                                <rect key="frame" x="10" y="59" width="301" height="36"/>
+                                <rect key="frame" x="10" y="108" width="301" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study Session" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eC-dg-0LW">
-                                <rect key="frame" x="41" y="112" width="238" height="39"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Study Session" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eC-dg-0LW">
+                                <rect key="frame" x="41" y="509" width="238" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -202,39 +202,36 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="SfC-tN-ovy" secondAttribute="bottom" constant="19" id="Dkb-ay-eok"/>
-                            <constraint firstAttribute="bottom" secondItem="6y2-eE-Eyv" secondAttribute="bottom" constant="22" id="PGS-LA-PEw"/>
+                            <constraint firstAttribute="bottom" secondItem="8eC-dg-0LW" secondAttribute="bottom" constant="20" id="MiR-Hp-sP7"/>
                             <constraint firstAttribute="bottom" secondItem="OsX-RI-wXZ" secondAttribute="bottom" constant="90" id="PXg-Ne-dXt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eDr-L2-c0B"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="backImageView" destination="YyT-z4-HwZ" id="hQ4-n9-r4c"/>
-                        <outlet property="denaLogoImageView" destination="6y2-eE-Eyv" id="mvr-Ud-hOx"/>
                         <outlet property="menu1View" destination="6CL-TV-ZI4" id="GmH-YK-ple"/>
                         <outlet property="menu2View" destination="iex-JO-6yW" id="ZFB-nw-ldo"/>
                         <outlet property="menu3View" destination="8Bl-7J-WIA" id="w0C-VH-CFV"/>
                         <outlet property="title1Label" destination="hxC-GX-44n" id="3Rl-Ng-WKj"/>
                         <outlet property="title2Label" destination="8eC-dg-0LW" id="nyI-7o-Prg"/>
-                        <outlet property="yahooLogoImageView" destination="SfC-tN-ovy" id="A9x-He-4Jk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAR-Bv-6oi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="SXi-JS-WAD">
                     <connections>
-                        <segue destination="bdq-uI-7yd" kind="push" identifier="GoSessionList" id="gwf-bo-Bw6"/>
+                        <segue destination="bdq-uI-7yd" kind="custom" identifier="GoSessionList" customClass="YDHomeSegue" id="gwf-bo-Bw6"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="t1M-xn-7NA">
                     <connections>
-                        <segue destination="zfz-E0-3Xs" kind="push" identifier="GoAccess" id="NGq-Kr-Jtk"/>
+                        <segue destination="zfz-E0-3Xs" kind="custom" identifier="GoAccess" customClass="YDHomeSegue" id="NGq-Kr-Jtk"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="7CK-cL-yHb">
                     <connections>
-                        <segue destination="YNr-XY-05m" kind="push" identifier="GoEventInfo" id="na5-Bu-vXC"/>
+                        <segue destination="YNr-XY-05m" kind="custom" identifier="GoEventInfo" customClass="YDHomeSegue" id="na5-Bu-vXC"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -340,9 +337,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="yny-HA-mxD">
+                            <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tOs-oN-BKz">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yahoo_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ttB-dl-dUg">
+                                    <rect key="frame" x="20" y="4" width="120" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="R0e-a9-Iuy"/>
+                                        <constraint firstAttribute="height" constant="50" id="Sw7-Or-SUJ"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dena_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="pII-5a-Gva">
+                                    <rect key="frame" x="180" y="9" width="120" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="G9x-UK-BPf"/>
+                                        <constraint firstAttribute="width" constant="120" id="m1e-8J-r9m"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="YahooSessionCell" id="bKm-yC-G41" customClass="YDSessionListViewCell">
-                                <rect key="frame" x="0.0" y="104" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="284" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bKm-yC-G41" id="ZqR-vt-Tf0">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
@@ -383,7 +407,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DenaSessionCell" id="eAG-6N-0uV" customClass="YDSessionListViewCell">
-                                <rect key="frame" x="0.0" y="204" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="384" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eAG-6N-0uV" id="3MG-Vu-yjR">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
@@ -448,8 +472,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d62-FA-6Md">
+                                <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yahoo_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSy-OI-Oco">
+                                <rect key="frame" x="20" y="70" width="120" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="14k-u1-9ib"/>
+                                    <constraint firstAttribute="width" constant="120" id="9fS-1U-zSl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dena_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tDe-OV-BEt">
+                                <rect key="frame" x="180" y="75" width="120" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="KEW-Ti-kd4"/>
+                                    <constraint firstAttribute="height" constant="40" id="VGB-Jc-zUv"/>
+                                </constraints>
+                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="R6C-hc-BKl">
-                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <rect key="frame" x="0.0" y="243" width="320" height="325"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
@@ -478,28 +522,29 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjH-20-DOe">
-                                <rect key="frame" x="15" y="80" width="50" height="50"/>
+                                <rect key="frame" x="15" y="80" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-0a-3hV">
-                                <rect key="frame" x="79" y="68" width="100" height="21"/>
+                                <rect key="frame" x="125" y="94" width="181" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="227" translatesAutoresizingMaskIntoConstraints="NO" id="lqf-fX-KV3">
-                                <rect key="frame" x="79" y="97" width="227" height="44"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQt-Ay-8Ku">
+                                <rect key="frame" x="125" y="146" width="181" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQt-Ay-8Ku">
-                                <rect key="frame" x="186" y="68" width="120" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Hy-xh-8p1">
+                                <rect key="frame" x="15" y="188" width="291" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -508,7 +553,6 @@
                     <connections>
                         <outlet property="nameLabel" destination="jkv-0a-3hV" id="W9O-GY-Vhi"/>
                         <outlet property="profileImageView" destination="cjH-20-DOe" id="f92-fw-U7X"/>
-                        <outlet property="sessionDescriptionLabel" destination="lqf-fX-KV3" id="h9L-17-w3F"/>
                         <outlet property="workLabel" destination="VQt-Ay-8Ku" id="pJK-ap-XXt"/>
                     </connections>
                 </viewController>

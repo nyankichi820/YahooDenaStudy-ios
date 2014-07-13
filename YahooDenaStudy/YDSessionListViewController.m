@@ -152,13 +152,14 @@
           
             
             dispatch_promise_on(dispatch_get_main_queue(),^{
-                imageView.frame = CGRectMake(point.x,point.y,imageView.frame.size.width,imageView.frame.size.height);
+                imageView.frame = CGRectMake(point.x,point.y,100,100);
                 return [UIView promiseAnimationWithDuration:0.4
                                                  animations:^{
                                                      imageView.transform  = CGAffineTransformMakeScale(25,25);
+                                                     imageView.center = CGPointMake(65,135);
                                                  }];
             }).then(^(BOOL finished){
-                imageView.center = CGPointMake(40,105);
+                
                 
                 return [UIView promiseAnimationWithDuration:0.4
                                                  animations:^{
