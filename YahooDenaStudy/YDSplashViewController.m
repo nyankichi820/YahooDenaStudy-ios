@@ -96,7 +96,7 @@
     if(animation == [self.splashLayer animationForKey:@"fire"]){
         __weak typeof(self) weakSelf = self;
         [UIView animateWithDuration:0.6 animations:^{
-            self.view.alpha = 0;
+            weakSelf.view.alpha = 0;
         } completion:^(BOOL finished) {
             [[YDDataFetcher shared] getConfig:^(id result, NSError *error) {
                 [weakSelf dismissViewControllerAnimated:NO completion:nil];

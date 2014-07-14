@@ -18,6 +18,10 @@
 }
 
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
 
 
 

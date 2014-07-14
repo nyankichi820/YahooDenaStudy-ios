@@ -21,6 +21,10 @@
 
 @implementation YDHomeViewController
 
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
+}
 
 
 - (void)viewDidLoad

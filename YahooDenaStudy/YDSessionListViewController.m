@@ -114,18 +114,7 @@
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] bk_initWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location) {
         UIImageView * imageView = (UIImageView*)sender.view;
         
-        dispatch_promise_on(dispatch_get_main_queue(),^{
-            return [UIView promiseAnimationWithDuration:0.6
-                                             animations:^{
-                                                 imageView.transform  = CGAffineTransformMakeScale(2,2);
-                                             }];
-        }).then(^(BOOL finished){
-            return [UIView promiseAnimationWithDuration:0.6
-                                             animations:^{
-                                                 imageView.transform  =  CGAffineTransformMakeScale(1,1);
-                                                 
-                                             }];
-        });
+     
     }];
     [cell.profileImageView addGestureRecognizer:gesture];
     
