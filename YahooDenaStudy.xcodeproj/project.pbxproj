@@ -602,7 +602,7 @@
 				7F798C58197196DD0031E4A6 /* splash */,
 				7F42F5551970EEDC00E9E2D9 /* img */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7F42F5551970EEDC00E9E2D9 /* img */ = {
